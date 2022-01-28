@@ -3,7 +3,7 @@
 @keyframes transitionIn {
   from {
     opacity: 0;
-    transform: rotateX(-35deg);
+    transform: rotateX(-30deg);
   } 
 
   to {
@@ -57,17 +57,17 @@ nav {
 }
 
 .logo{
-  height: 80%;
+  height: 70%;
   grid-column: 2/3;
   justify-self: start;
-  padding: 5px;
+  padding: 7px;
 }
 
 .burger {
   grid-column: 3/3;
   justify-self: end;
-   height: 80%;
-   padding: 5px;
+   height: 60%;
+   padding: 10px;
 }
 
 #canv {
@@ -107,7 +107,6 @@ nav {
   border: none;
 }
 
-
 .overlay {
   height: 100%;
   width: 0;
@@ -116,14 +115,14 @@ nav {
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgba(0,0,0, 0.93);
   overflow-x: hidden;
   transition: 0.5s;
 }
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  top: 35%;
   width: 100%;
   text-align: center;
   margin-top: 30px;
