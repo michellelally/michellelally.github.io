@@ -73,11 +73,11 @@ function draw() {
 }
 
 function rndCol() {
-  var r = Math.floor(Math.random() * 180);
-  var g = Math.floor(Math.random() * 60);
-  var b = Math.floor(Math.random() * 100);
-  // return "rgb(" + r + "," + g + "," + b + ")";
-  return "rgb(255, 87, 51)";
+  var r = Math.floor(Math.random() * 50);
+  var g = Math.floor(Math.random() * 90);
+  var b = Math.floor(Math.random() * 90);
+  return "rgb(" + r + "," + g + "," + b + ")";
+  // return "rgb(255, 87, 51)";
 }
 
 function rng(min, max) {
