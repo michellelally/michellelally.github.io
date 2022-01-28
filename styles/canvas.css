@@ -3,7 +3,7 @@
 @keyframes transitionIn {
   from {
     opacity: 0;
-    transform: rotateX(-20deg);
+    transform: rotateX(-35deg);
   } 
 
   to {
@@ -15,7 +15,7 @@
 @keyframes transitionInBtn {
   from {
     opacity: 0;
-    transform: rotateY(-30deg);
+    transform: rotateY(-35deg);
   } 
 
   to {
@@ -46,11 +46,39 @@ body {
   background-image: linear-gradient(to right top, hsla(0, 5%, 15%, 0.5), hsla(0, 5%, 5%, 1));
   background-image: -moz-linear-gradient(to right top, hsla(0, 5%, 15%, 0.5), hsla(0, 5%, 5%, 1));
 }
-#lights{
-  animation: transitionIn 4.0s;
+
+nav {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height: 6vh;
+  color: white;
+  align-self: center;
+  background-color:  hsla(76, 96%, 56%, 0.562);
+}
+
+.logo{
+  height: 80%;
+  grid-column: 2/3;
+  justify-self: start;
+  padding: 5px;
+}
+
+.burger {
+  grid-column: 3/3;
+  justify-self: end;
+   height: 80%;
+   padding: 5px;
+}
+
+#canv {
+  margin-top: 6vh;
+}
+
+#name{
+  animation: transitionIn 6.0s;
   text-align:center;
   width:100%;
-  color:rgb(173, 156, 58);
+  color:#f9f5f9;
   font-size:6em;
   text-shadow:1px 1px hsla(0,0%,5%,1),
           -1px -1px hsla(0,0%,5%,1);
@@ -69,12 +97,63 @@ body {
 #btn {
   
   font-family: 'Poiret One', cursive;
-  animation: transitionInBtn 7.0s;
-  background-color: rgb(173, 156, 58);
+  animation: transitionInBtn 8s;
+  background-color: #f9f5f9;
   color: #000000;
-  letter-spacing: 6px;
+  letter-spacing: 5px;
   font-size:2em;
-  padding: 1%;
+  padding: 1.25%;
   border-radius: 10px;
   border: none;
+}
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
 }
