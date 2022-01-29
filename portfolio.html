@@ -4,12 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Border Animation</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
 
 </head>
 
 <body>
+
+
+  <header>
+    <nav>
+        <img class="logo" src="./img/logo.png" alt="logo">
+        <img class="burger" src="./img/burger.png" alt="burger" onclick="openNav()">
+    </nav>
+
+
+    <div id="menu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="./index.html">Home</a>
+            <a href="./portfolio.html#about">About</a>
+            <a href="./portfolio.html#projects">Projects</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+
+</header>
+
 
     <div class="marquee-container">
         <div class="marquee marquee--top">
@@ -30,7 +52,7 @@
         <!-- <h1>You'll <u>never</u> believe how chill it is!</h1>
         <p>The chill zone is where all the things are copacetic. Think about all the unchill things in your life. Think about them, just for a moment. And now? Just forget about 'em. Why? Because, my friend: you've just entered the <em>Chill Zone</em>. The following passages of text are pulled from this <a href="https://www.wikihow.com/Be-Chill">wikiHow article</a>.</p>
        -->
-        <img src="img/me.jpg"  id="about" alt="me">
+        <!-- <img src="img/me.jpg"  id="about" alt="me"> -->
         <section class="page-content__section" data-bg-color="#17202A">
           <h2 >Welcome to my portfolio</h2>
       
@@ -72,6 +94,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
     
 </body>
 
