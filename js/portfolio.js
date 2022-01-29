@@ -10,7 +10,7 @@ const updateMarqueeText = () => {
     marquee.classList.add("active");
     marquee.addEventListener("transitionend", () => {
       marquee.classList.remove("active");
-      marquee.innerText = `${marqueeText} 😎 `.repeat(20);
+      marquee.innerText = `${marqueeText} 🔹 `.repeat(20);
     });
   });
 };

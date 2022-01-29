@@ -2,7 +2,7 @@
 nav {
     display: grid;
     grid-template-columns: 10% 1fr 1fr 10%;
-    min-height: 6%;
+    min-height: 6vh;
     color: white;
     align-self: center;
     background-color:  hsla(76, 96%, 56%, 0.562);
