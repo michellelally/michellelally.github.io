@@ -24,6 +24,21 @@
   }
 }
 
+
+@keyframes t{
+  90%,100% {width:100%}
+}
+
+@keyframes c{
+  0%,100%{box-shadow:5px 0 0 #0000}
+  50%    {box-shadow:5px 0 0 white}
+}
+
+
+@keyframes m{
+  100% {transform:translateY(-400%)}
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -39,6 +54,8 @@ body {
   width: 100%;
   margin: 0;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
   font-family: 'Poiret One', cursive;
   background: rgba(0, 0, 0, 0.74);
   background-repeat: no-repeat;
@@ -75,7 +92,7 @@ nav {
 }
 
 #name{
-  animation: transitionIn 6.0s;
+  animation: transitionIn 5.0s;
   text-align:center;
   width:100%;
   color:#f9f5f9;
@@ -155,5 +172,40 @@ nav {
   font-size: 40px;
   top: 15px;
   right: 35px;
+  }
+}
+/* 
+.type-container {
+  text-align: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+} */
+
+.type {
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: transitionIn 4.0s, typewriter 2s steps(13) infinite alternate,
+    blink 800ms steps(13) infinite normal;
+    /* animation: transitionIn 6.0s; */
+
+  color: greenyellow;
+  margin:auto;
+}
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: black;
+  }
+  to {
+    border-color: transparent;
   }
 }
