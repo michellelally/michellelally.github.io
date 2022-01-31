@@ -7,10 +7,11 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  background-color:  hsla(76, 96%, 56%, 0.562);
+  background-color:  #73941A;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */ 
+  height: 100px;
 }
 
 a {

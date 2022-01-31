@@ -88,7 +88,7 @@ nav {
 } */
 
 #canv {
-  margin-top: 7vh;
+  margin-top: 8vh;
 }
 
 #name{
@@ -103,6 +103,7 @@ nav {
   text-align: center;
   position: relative;
   margin-top: 40vh;
+  margin-bottom: 5vh;
 }
 
 #btn-container{
@@ -115,13 +116,24 @@ nav {
   
   font-family: 'Poiret One', cursive;
   animation: transitionInBtn 8s;
-  background-color: #f9f5f9;
-  color: #000000;
+  background-color: #8c34e4;
+  color: #ffffff;
   letter-spacing: 5px;
   font-size:2em;
   padding: 1.25%;
   border-radius: 10px;
   border: none;
+}
+
+#btn:hover {
+  background-color: #a058e8;
+  cursor: pointer;
+}
+
+#btn:active {
+  background-color: #a058e8;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 
@@ -174,23 +186,20 @@ nav {
   right: 35px;
   }
 }
-/* 
+
 .type-container {
-  text-align: center;
-  align-self: center;
-  align-items: center;
-  align-content: center;
-} */
+  margin-bottom: 5vh;
+} 
 
 .type {
-  font-size: 20px;
+
+  font-size: 2em;
   white-space: nowrap;
   overflow: hidden;
   animation: transitionIn 4.0s, typewriter 2s steps(13) infinite alternate,
     blink 800ms steps(13) infinite normal;
     /* animation: transitionIn 6.0s; */
-
-  color: greenyellow;
+  color: white;
   margin:auto;
 }
 @keyframes typewriter {
@@ -198,14 +207,29 @@ nav {
     width: 0%;
   }
   to {
-    width: 20%;
+    width: 40%;
   }
 }
 @keyframes blink {
   from {
-    border-color: black;
+    border-color: white;
   }
   to {
     border-color: transparent;
   }
+}
+
+@-moz-document url-prefix() {
+  #canv {
+    margin-top: 10vh;
+  }
+
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 42%;
+  }
+}
 }

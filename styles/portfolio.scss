@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+
 @keyframes transitionIn {
   from {
     opacity: 0;
@@ -21,7 +24,6 @@
     transform: rotateY(0);
   }
 }
-
 
 :root {
   --color-background: #151818;
@@ -48,12 +50,22 @@ body {
 
 }
 
+nav { 
+  padding: .5rem 1rem;
+}
+
+menu-wrap{ 
+  padding-top: 0;
+}
+
 
 .page-content {
   animation: transitionIn 0.75s;
   max-width: 90ch;
   padding: 4rem;
+  padding-top: 1rem;
   margin: 8rem auto;
+  margin-top: 5rem;
 
   * + * {
     margin-top: 2.5rem;
@@ -74,6 +86,8 @@ body {
     font-size: var(--section-heading-font-size);
     font-weight: 700;
     line-height: 1.2;
+    font-family: 'Poiret One', cursive;
+
   }
 
   em {
@@ -130,7 +144,6 @@ body {
 }
 
 .marquee-container {
-
   position: fixed;
   pointer-events: none;
   top: 0;
@@ -149,6 +162,7 @@ body {
   position: absolute;
   font-size: var(--marquee-font-size);
   line-height: 1;
+  font-family: 'Poiret One', cursive;
   white-space: nowrap;
   letter-spacing: 0.25rem;
   overflow: hidden;
@@ -192,4 +206,19 @@ body {
       opacity: 0;
     }
   }
+}
+
+// .photo-container {
+//   display: flex;
+// }
+
+#about {
+  max-width: 50%;
+  float: left;
+  padding-right: 2%;
+}
+
+.welcome {
+  margin-top: 0;
+  font-size: medium;
 }
