@@ -48,23 +48,6 @@ body {
 
 }
 
-nav {
-  min-height: 6vh;
-}
-
-.logo{
-  height: 100%;
-  grid-column: 2/3;
-  justify-self: start;
-  padding: 5px;
-}
-
-.burger {
-  grid-column: 3/3;
-  justify-self: end;
-   height: 100%;
-   padding: 5px;
-}
 
 .page-content {
   animation: transitionIn 0.75s;
@@ -159,7 +142,7 @@ nav {
   font-family: "Karla", sans-serif;
   text-transform: uppercase;
   z-index: 1;
-  margin-top: 6vh;
+  margin-top: 8.5vh;
 }
 
 .marquee {

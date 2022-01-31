@@ -63,7 +63,7 @@ body {
   background-image: linear-gradient(to right top, hsla(0, 5%, 15%, 0.5), hsla(0, 5%, 5%, 1));
   background-image: -moz-linear-gradient(to right top, hsla(0, 5%, 15%, 0.5), hsla(0, 5%, 5%, 1));
 }
-
+/* 
 nav {
   display: grid;
   grid-template-columns: 10% 1fr 1fr 10%;
@@ -85,10 +85,10 @@ nav {
   justify-self: end;
    height: 80%;
    padding: 5px;
-}
+} */
 
 #canv {
-  margin-top: 6vh;
+  margin-top: 7vh;
 }
 
 #name{

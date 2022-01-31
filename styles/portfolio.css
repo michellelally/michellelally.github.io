@@ -76,29 +76,6 @@ body {
   transition: background-color var(--duration) var(--ease);
 }
 
-nav {
-  min-height: 6vh;
-}
-
-.logo {
-  height: 100%;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  padding: 5px;
-}
-
-.burger {
-  -ms-grid-column: 3;
-  grid-column: 3/3;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  height: 100%;
-  padding: 5px;
-}
-
 .page-content {
   -webkit-animation: transitionIn 0.75s;
           animation: transitionIn 0.75s;
@@ -230,7 +207,7 @@ nav {
   font-family: "Karla", sans-serif;
   text-transform: uppercase;
   z-index: 1;
-  margin-top: 6vh;
+  margin-top: 8.5vh;
 }
 
 .marquee {

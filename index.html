@@ -4,39 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Michelle Lally Web Developer</title>
-
     <link rel="stylesheet" href="styles/canvas.css">
     <link rel="stylesheet" href="styles/navbar.css">
-
-
-    <meta charset=”UTF-8">
-    <meta http-equiv=”X-UA-Compatible” content=”IE=Edge”>
     <meta name=”viewport” content=”width=device-width, initial-scale=1">
-
     <link rel=”stylesheet” href="/styles/typing.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
 <body>
-
     <header>
         <nav>
-            <img class="logo" src="./img/logo.png" alt="logo">
-            <img class="burger" src="./img/burger.png" alt="burger" onclick="openNav()">
+            <div class="menu-wrap">
+                <img class="logo" src="./img/logo.png" alt="logo">
+
+                <input type="checkbox" class="toggler" onclick="openNav()">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+            </div>
         </nav>
-
-
         <div id="menu" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
+                <a href="./index.html">Home</a>
+                <a href="./portfolio.html#about">About</a>
+                <a href="./portfolio.html#projects">Projects</a>
+                <a href="./contact.html">Contact</a>
             </div>
         </div>
-
     </header>
 
     <canvas id="canv" class="full-height"></canvas>
@@ -46,7 +42,7 @@
 
     </div>
     <div id="btn-container">
-       
+
         <button id="btn" onclick="myFunction()">PORTFOLIO</button>
     </div>
     <script src="js/canvas.js"></script>
