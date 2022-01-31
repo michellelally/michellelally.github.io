@@ -6,10 +6,16 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/portfolio.css">
+  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+
   <style>
     nav {
       padding: .5rem 1rem;
+    }
 
+    p {
+      font-family: 'Didact Gothic';
+      font-size: 22px;
     }
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,7 +70,8 @@
         <img src="img/me.jpg" id="about" alt="me">
 
         <p class="welcome">
-          I am a Software Development Graduate who recently completed a course in Computing with Web Development who has gained a
+          I am a Software Development Graduate who recently completed a course in Computing with Web Development who has
+          gained a
           strong foundation in software, web and application development and programming principles.
           <br>
           With many years experience in hospitality and customer service, I have proven to be an energetic,
@@ -81,83 +88,78 @@
     </section>
 
     <section class="page-content__section" data-bg-color="#222222">
-      <h2>Education</h2>
+      <h2>Tools & Technologies</h2>
 
+      <p class="tools">
 
-      Leaving Certificate Applied in The Holy Rosary College Mountbellew, Galway
-      <br>
-      QQI Level 5 in Programming and Software Development in Galway Technical Institute
-      <br>
-      Bachelor of Science in Software Development in Galway-Mayo Technical Institute
-      <br>
-      Higer Diploma in Science in Computing with Web Development with The National College of Ireland
+      <div class="logo-container">
+        <h5 class="text" data-src="img/html.png">HTML</h5>
+        <h5 class="text" data-src="./img/js.png">JS</h5>
+        <h5 class="text" data-src="./img/css.png">CSS</h5>
+        <h5 class="text" data-src="./img/react.png">React</h5>
+        <h5 class="text" data-src="./img/angular.png">Angular</h5>
+        <h5 class="text" data-src="./img/ionic.png">Ionic</h5>
+        <h5 class="text" data-src="./img/tailwind.png">Tailwind</h5>
+        <h5 class="text" data-src="./img/bootstrap.png">Bootstrap</h5>
+        <h5 class="text" data-src="./img/java.png">Java</h5>
+        <h5 class="text" data-src="./img/csharp.png">C#</h5>
+        <h5 class="text" data-src="./img/python.png">Python</h5>
+        <h5 class="text" data-src="./img/ruby.png">Ruby</h5>
+
+        <img src="./img/html.png" class="hover-img" alt="">
+      </div>
+      </p>
     </section>
 
     <section class="page-content__section" data-bg-color="#333333">
       <h2>Experience</h2>
 
       <p>
-        LINE OPERATOR Medtronic
+        Office Administrator TLS
+        Galway, Ireland | May 2021 - Present
+      </p>
 
+      <p>
+        Line Operator, Medtronic
         Galway, Ireland | August 2020 - Present
-        Assembled parts for ICU Ventilators according to engineering specs in the Mervue plant and most recently inspect
-        and align stents in Parkmore.
-
       </p>
 
       <p>
         FINE DINING SERVER Quan Ju De
         Vancouver, Canada | January 2019 - March 2020
-        Provided food and wine presentations and recommendations, maintained detailed knowledge of menu items, served a
-        high volume of customers and was entrusted with important clients and large groups.
+
       </p>
 
       <p>
         BARTENDER/SERVER The Distillery Bar + Kitchen
-
         Vancouver, Canada | May 2019 - March 2020
-        Taking food and drink orders, mixing and serving cocktails, making infusions & syrups monitoring alcohol intake.
       </p>
 
       <p>
         BARTENDER/SERVER The Kings Head
-
         Vancouver, Canada | July 2019 - November 2019
-
-        Taking food and drink orders, running food & drinks, opening & closing the restaurant, writing special boards,
-        doing cash out.
       </p>
 
       <p>
         BARTENDER/SERVER Black Frog Eatery
-
         Vancouver, Canada | May 2018- August 2018
-        Opening the bar setting up for the day, locking up at night, taking food and drink orders Counting cash and
-        calculating staff tips,
+
       </p>
 
       <p>
         BARTENDER/SERVER Flannery’s Hotel
-
         Renmore, Galway | December 2017 - May 2019
-        Serving customers at the bar, taking food orders, being aware of allergens, giving recommendations
       </p>
 
       <p>
         BARTENDER/SERVER The Skeff
-
         Galway, Ireland | June 2017 - December 2017
-        Mixing and serving drinks to customers, engaging the customers in
-        conversation, stock maintenance, checking identification.
+
       </p>
 
       <p>
         STUDENT SOFTWARE/WEB DEVELOPER Ontia
-
         Krakow, Poland | March – April 2016
-
-        Learning how to develop basic websites using XML to store and transport data, creating online databases using
-        MySQL and phpMyAdmin, manipulating XML data with Java to link databases, producing GUI’s for Java programs.
     </section>
 
     <section class="page-content__section" data-bg-color="#444444">
@@ -178,6 +180,26 @@
 
   </main>
 
+
+  <script>
+
+    let container = document.querySelector('.logo-container');
+    let img = container.querySelector('.hover-img');
+
+    document.body.onmousemove = (e) => {
+      let x = e.pageX;
+      let y = e.pageY;
+      img.style.top = y + 'px';
+      img.style.left = x + 'px';
+    }
+
+    container.querySelectorAll('.text').forEach(text => {
+      text.onmousemove = () => {
+        img.src = text.getAttribute('data-src');
+      }
+    });
+
+  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script src="js/portfolio.js"></script>

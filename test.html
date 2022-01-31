@@ -1,51 +1,48 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Typewriter Effect</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <style type="text/css">
-  {
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        outline: none;
-      }
-      body {
-        background-color: #2ca32c;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        display: flex;
-      }
-  
-      h1 {
-        font-size: 90px;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typewriter 2s steps(13) infinite alternate,
-          blink 800ms steps(13) infinite normal;
-        border-right: 5px solid black;
-      }
-      @keyframes typewriter {
-        from {
-          width: 0%;
-        }
-        to {
-          width: 50%;
-        }
-      }
-      @keyframes blink {
-        from {
-          border-color: black;
-        }
-        to {
-          border-color: transparent;
-        }
-      }
-     
-    </style>
-  </head>
-  <body>
-    <h1>Designer & Developer</h1>
-  </body>
-</html>
+<dom-module id="custom-tag">
+
+  <template>
+
+    <link rel="stylesheet" href="./styles/test.css">
+
+    <div class="logo-container">
+      <h5 class="text" data-src="./img/html.png">HTML</h5>
+      <h5 class="text" data-src="./img/js.png">JS</h5>
+      <h5 class="text" data-src="./img/css.png">CSS</h5>
+      <h5 class="text" data-src="./img/react.png">React</h5>
+      <h5 class="text" data-src="./img/angular.png">Angular</h5>
+      <h5 class="text" data-src="./img/ionic.png">Ionic</h>
+        <h5 class="text" data-src="./img/tailwind.png">Tailwind</h5>
+        <h5 class="text" data-src="./img/bootstrap.png">Bootstrap</h5>
+        <h5 class="text" data-src="./img/java.png">Java</h5>
+        <h5 class="text" data-src="./img/csharp.png">C#</h5>
+        <h5 class="text" data-src="./img/python.png">Python</h5>
+        <h5 class="text" data-src="./img/ruby.png">Ruby</h5>
+
+        <img src="./img/html.png" class="hover-img" alt="">
+    </div>
+
+  </template>
+
+</dom-module>
+
+<script>
+  Polymer({
+    is: "custom-tag",
+  });
+
+  let container = document.querySelector('.logo-container');
+  let img = container.querySelector('.hover-img');
+
+  document.body.onmousemove = (e) => {
+    let x = e.pageX;
+    let y = e.pageY;
+    img.style.top = y + 'px';
+    img.style.left = x + 'px';
+  }
+
+  container.querySelectorAll('.text').forEach(text => {
+    text.onmousemove = () => {
+      img.src = text.getAttribute('data-src');
+    }
+  });
+</script>

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
 @-webkit-keyframes transitionIn {
   from {
     opacity: 0;
@@ -92,6 +93,7 @@ menu-wrap {
   padding-top: 1rem;
   margin: 8rem auto;
   margin-top: 5rem;
+  font-size-adjust: 0.55;
 }
 
 .page-content * + * {
@@ -103,14 +105,12 @@ menu-wrap {
 }
 
 .page-content h1 {
-  font-size: var(--headline-font-size);
   font-weight: 700;
   line-height: 1.2;
 }
 
 .page-content h2 {
   margin-top: 6rem;
-  font-size: var(--section-heading-font-size);
   font-weight: 700;
   line-height: 1.2;
   font-family: 'Poiret One', cursive;
@@ -121,7 +121,6 @@ menu-wrap {
 }
 
 .page-content p {
-  font-size: var(--paragraph-font-size);
   line-height: 1.75;
   letter-spacing: 0.0125rem;
 }
@@ -291,6 +290,73 @@ menu-wrap {
 
 .welcome {
   margin-top: 0;
-  font-size: medium;
+}
+
+@-moz-document url-prefix() {
+  .h2 {
+    font-size: 15vh;
+  }
+}
+
+* {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html::-webkit-scrollbar {
+  width: 20px;
+}
+
+html::-webkit-scrollbar-track {
+  background: #000;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+.logo-container {
+  padding: 2%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-container .text {
+  color: #fff3;
+  font-size: 2vw;
+  text-transform: capitalize;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.logo-container .text:hover {
+  color: #fff;
+  position: relative;
+  z-index: 100;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.logo-container .text:hover ~ .hover-img {
+  -webkit-transform: translate(-2%, -2%) scale(1);
+          transform: translate(-2%, -2%) scale(1);
+  opacity: 1;
+}
+
+.hover-img {
+  position: absolute;
+  -webkit-transform: translate(-2%, -2%) scale(0.5);
+          transform: translate(-2%, -2%) scale(0.5);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
 }
 /*# sourceMappingURL=portfolio.css.map */

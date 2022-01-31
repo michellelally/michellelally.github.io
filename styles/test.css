@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+  font-family: 'Nunito', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  transition: all .2s linear;
+}
+
+html::-webkit-scrollbar{
+  width:20px;
+}
+
+html::-webkit-scrollbar-track{
+  background: #000;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: #fff;
+}
+
+.logo-container{
+  padding:9%;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.logo-container .text{
+  color:#fff3;
+  font-size: 8vw;
+  text-transform: capitalize;
+  padding:30px;
+  cursor: pointer;
+}
+
+.logo-container .text:hover{
+  color:#fff;
+  position: relative;
+  z-index: 100;
+  text-shadow: 0 5px 10px rgba(0,0,0,.7);
+}
+
+.logo-container .text:hover ~ .hover-img{
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.hover-img{
+  position: absolute;
+  top:0; left:0;
+  transform: translate(-50%, -50%) scale(.5);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 10;
+}

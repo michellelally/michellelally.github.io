@@ -54,3 +54,21 @@ gsap.utils.toArray(".page-content__section h2").forEach((heading) => {
       setActiveSection(heading.parentElement)
   });
 });
+
+
+
+let container = document.querySelector('.logo-container');
+let img = container.querySelector('.hover-img');
+
+document.body.onmousemove = (e) =>{
+  let x = e.pageX;
+  let y = e.pageY;
+  img.style.top = y + 'px';
+  img.style.left = x + 'px';
+}
+
+container.querySelectorAll('.text').forEach(text =>{
+  text.onmousemove = () =>{
+    img.src = text.getAttribute('data-src');
+  }
+});
