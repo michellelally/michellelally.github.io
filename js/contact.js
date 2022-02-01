@@ -1,19 +1,23 @@
-const section = document.querySelector("section"),
-    hireBtn = document.querySelector(".profile .button"),
-cancelBtn = document.querySelectorAll("#close");
+// const section = document.getElementsByClassName("section"),
+// contactBtn = section.querySelector("#contact"),
+// closeBtn = section.querySelectorAll("#close"),
+// textArea = section.querySelector("textarea");
 
+let contactBtn = document.getElementById("#contact"),
+closeBtn = document.getElementById("#close"),
+textAre = document.getElementById("#message");
 
-window.addEventListener('load', (event) => {
-    section.classList.add("active");
+// console.log(section)
 
+console.log(contactBtn)
+
+contactBtn.addEventListener("click" , () =>{
+  section.classList.add("show");
 });
 
-// hireBtn.addEventListener("load", () => {
-//     section.classList.add("active");
-// })
-cancelBtn.forEach(cBtn => {
-    cBtn.addEventListener("click", () => {
-        section.classList.remove("active");
-    })
+closeBtn.forEach(cBtn => {
+  cBtn.addEventListener("click" , ()=>{
+      section.classList.remove("show");
+      textArea.value = "";
+  });
 });
-console.log(cancelBtn);

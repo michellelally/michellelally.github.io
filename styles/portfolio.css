@@ -79,6 +79,7 @@ body {
 }
 
 nav {
+  z-index: 2;
   padding: .5rem 1rem;
 }
 
@@ -87,6 +88,7 @@ menu-wrap {
 }
 
 .page-content {
+  z-index: 1;
   -webkit-animation: transitionIn 0.75s;
           animation: transitionIn 0.75s;
   max-width: 90ch;
@@ -210,6 +212,7 @@ menu-wrap {
 }
 
 .marquee-container {
+  z-index: 1;
   position: fixed;
   pointer-events: none;
   top: 0;
@@ -220,10 +223,11 @@ menu-wrap {
   font-weight: 700;
   text-transform: uppercase;
   z-index: 1;
-  margin-top: 8.5vh;
+  margin-top: 100px;
 }
 
 .marquee {
+  z-index: 1;
   position: absolute;
   font-size: var(--marquee-font-size);
   line-height: 1;
