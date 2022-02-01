@@ -55,20 +55,18 @@ gsap.utils.toArray(".page-content__section h2").forEach((heading) => {
   });
 });
 
+let logoContainer = document.querySelector('.logo-container');
+let logoImg = logoContainer.querySelector('.hover-img');
 
-
-let container = document.querySelector('.logo-container');
-let img = container.querySelector('.hover-img');
-
-document.body.onmousemove = (e) =>{
-  let x = e.pageX;
-  let y = e.pageY;
-  img.style.top = y + 'px';
-  img.style.left = x + 'px';
+document.body.onmousemove = (e) => {
+  let x = e.pageX - 15;
+  let y = e.pageY - 15;
+  logoImg.style.top = y + 'px';
+  logoImg.style.left = x + 'px';
 }
 
-container.querySelectorAll('.text').forEach(text =>{
-  text.onmousemove = () =>{
-    img.src = text.getAttribute('data-src');
+logoContainer.querySelectorAll('.text').forEach(text => {
+  text.onmousemove = () => {
+    logoImg.src = text.getAttribute('data-src');
   }
 });

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -91,23 +92,22 @@
       <h2>Tools & Technologies</h2>
 
       <p class="tools">
+        <div class="logo-container">
+          <h5 class="text" data-src="img/html.png">HTML</h5>
+          <h5 class="text" data-src="./img/js.png">JS</h5>
+          <h5 class="text" data-src="./img/css.png">CSS</h5>
+          <h5 class="text" data-src="./img/react.png">React</h5>
+          <h5 class="text" data-src="./img/angular.png">Angular</h5>
+          <h5 class="text" data-src="./img/ionic.png">Ionic</h5>
+          <h5 class="text" data-src="./img/tailwind.png">Tailwind</h5>
+          <h5 class="text" data-src="./img/bootstrap.png">Bootstrap</h5>
+          <h5 class="text" data-src="./img/java.png">Java</h5>
+          <h5 class="text" data-src="./img/csharp.png">C#</h5>
+          <h5 class="text" data-src="./img/python.png">Python</h5>
+          <h5 class="text" data-src="./img/ruby.png">Ruby</h5>
 
-      <div class="logo-container">
-        <h5 class="text" data-src="img/html.png">HTML</h5>
-        <h5 class="text" data-src="./img/js.png">JS</h5>
-        <h5 class="text" data-src="./img/css.png">CSS</h5>
-        <h5 class="text" data-src="./img/react.png">React</h5>
-        <h5 class="text" data-src="./img/angular.png">Angular</h5>
-        <h5 class="text" data-src="./img/ionic.png">Ionic</h5>
-        <h5 class="text" data-src="./img/tailwind.png">Tailwind</h5>
-        <h5 class="text" data-src="./img/bootstrap.png">Bootstrap</h5>
-        <h5 class="text" data-src="./img/java.png">Java</h5>
-        <h5 class="text" data-src="./img/csharp.png">C#</h5>
-        <h5 class="text" data-src="./img/python.png">Python</h5>
-        <h5 class="text" data-src="./img/ruby.png">Ruby</h5>
-
-        <img src="./img/html.png" class="hover-img" alt="">
-      </div>
+          <img src="./img/html.png" class="hover-img" alt="">
+        </div>
       </p>
     </section>
 
@@ -181,25 +181,7 @@
   </main>
 
 
-  <script>
 
-    let container = document.querySelector('.logo-container');
-    let img = container.querySelector('.hover-img');
-
-    document.body.onmousemove = (e) => {
-      let x = e.pageX;
-      let y = e.pageY;
-      img.style.top = y + 'px';
-      img.style.left = x + 'px';
-    }
-
-    container.querySelectorAll('.text').forEach(text => {
-      text.onmousemove = () => {
-        img.src = text.getAttribute('data-src');
-      }
-    });
-
-  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
   <script src="js/portfolio.js"></script>

@@ -41,6 +41,8 @@
 
 * {
   box-sizing: border-box;
+  transition: all .2s linear;
+
 }
 
 body {
@@ -230,13 +232,12 @@ menu-wrap{
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 
-*{
-  font-family: 'Nunito', sans-serif;
-  margin:0; padding:0;
-  box-sizing: border-box;
-  outline: none; border:none;
-  transition: all .2s linear;
-}
+// *{
+//   margin:0; padding:0;
+//   box-sizing: border-box;
+//   outline: none; border:none;
+//   transition: all .2s linear;
+// }
 
 html::-webkit-scrollbar{
   width:20px;
@@ -251,6 +252,10 @@ html::-webkit-scrollbar-thumb{
 }
 
 .logo-container{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  transition: all .2s linear;
   padding:2%;
   text-align: center;
   // position: relative;
@@ -260,6 +265,8 @@ html::-webkit-scrollbar-thumb{
 }
 
 .logo-container .text{
+  font-family: 'Poiret One', cursive;
+
   color:#fff3;
   font-size: 2vw;
   text-transform: capitalize;
@@ -280,6 +287,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .hover-img{
+  transition: all .2s linear;
   position: absolute;
   // top:0; left:0;
   transform: translate(-2%, -2%) scale(.5);
