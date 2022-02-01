@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap");
 @-webkit-keyframes transitionIn {
   from {
     opacity: 0;
@@ -91,7 +90,7 @@ menu-wrap {
   -webkit-animation: transitionIn 0.75s;
           animation: transitionIn 0.75s;
   max-width: 90ch;
-  padding: 4rem;
+  padding: 5rem;
   padding-top: 1rem;
   margin: 8rem auto;
   margin-top: 5rem;
@@ -107,6 +106,7 @@ menu-wrap {
 }
 
 .page-content h1 {
+  font-size: var(--headline-font-size);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -123,6 +123,7 @@ menu-wrap {
 }
 
 .page-content p {
+  font-size: var(--paragraph-font-size);
   line-height: 1.75;
   letter-spacing: 0.0125rem;
 }
@@ -216,7 +217,6 @@ menu-wrap {
   height: 100%;
   overflow: hidden;
   font-weight: 700;
-  font-family: "Karla", sans-serif;
   text-transform: uppercase;
   z-index: 1;
   margin-top: 8.5vh;
@@ -294,12 +294,6 @@ menu-wrap {
   margin-top: 0;
 }
 
-@-moz-document url-prefix() {
-  .h2 {
-    font-size: 15vh;
-  }
-}
-
 html::-webkit-scrollbar {
   width: 20px;
 }
@@ -331,7 +325,7 @@ html::-webkit-scrollbar-thumb {
 .logo-container .text {
   font-family: 'Poiret One', cursive;
   color: #fff3;
-  font-size: 2vw;
+  font-size: 2vh;
   text-transform: capitalize;
   padding: 2%;
   cursor: pointer;

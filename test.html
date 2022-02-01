@@ -1,48 +1,143 @@
-<dom-module id="custom-tag">
+<!DOCTYPE html>
+<html lang="en">
 
-  <template>
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles/test.css">
 
-    <link rel="stylesheet" href="./styles/test.css">
+  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 
-    <div class="logo-container">
-      <h5 class="text" data-src="./img/html.png">HTML</h5>
-      <h5 class="text" data-src="./img/js.png">JS</h5>
-      <h5 class="text" data-src="./img/css.png">CSS</h5>
-      <h5 class="text" data-src="./img/react.png">React</h5>
-      <h5 class="text" data-src="./img/angular.png">Angular</h5>
-      <h5 class="text" data-src="./img/ionic.png">Ionic</h>
-        <h5 class="text" data-src="./img/tailwind.png">Tailwind</h5>
-        <h5 class="text" data-src="./img/bootstrap.png">Bootstrap</h5>
-        <h5 class="text" data-src="./img/java.png">Java</h5>
-        <h5 class="text" data-src="./img/csharp.png">C#</h5>
-        <h5 class="text" data-src="./img/python.png">Python</h5>
-        <h5 class="text" data-src="./img/ruby.png">Ruby</h5>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-        <img src="./img/html.png" class="hover-img" alt="">
+<body>
+
+  <div class="wrapper">
+    <h1>Projects</h1>
+    <div class="cols">
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://unsplash.it/500/500/)">
+            <div class="inner">
+              <p>Harry's Bar</p>
+              <span>React Native</span>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <p>An interactive cocktail menu for a local bar with a machine learning recommendation system</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="url(https://unsplash.it/511/511/)">
+            <div class="inner">
+              <p>Pocket Rota</p>
+              <span>Ruby on Rails</span>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <p>A web application for restaraunt and bar managers to keep track of employees, covid restricitons & events</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://unsplash.it/502/502/)">
+            <div class="inner">
+              <p>Harry's Bar</p>
+              <span>React</span>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <p>Before the mobile version, I created a web app for the interactive menu to build my knowledge of the React library</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://unsplash.it/503/503/)">
+            <div class="inner">
+              <p>Ruby Productions</p>
+              <span>HTML CSS JS</span>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <p>A portfolio for a local videographer to display and advertise his work to potential future employers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://unsplash.it/504/504/">
+            <div class="inner">
+              <p>Activists Hub</p>
+              <span>Laravel</span>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <p>As part of an ongoing volunteer group, I am part of a team redesigning this web application</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://unsplash.it/505/505/)">
+            <div class="inner">
+              <p>Weblectric</p>
+              <span>HTML CSS JS</span>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <p>A webpage to advertise and buy tickets to an online virtual music festival as part of a team project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://unsplash.it/506/506/)">
+            <div class="inner">
+              <p>Half a Minute</p>
+              <span>Angular</span>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <p>A word guessing game similar to 30 seconds that allows the user to customize the words used in the game</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col" ontouchstart="this.classList.toggle('hover');">
+        <div class="container">
+          <div class="front" style="background-image: url(https://unsplash.it/508/508/)">
+            <div class="inner">
+              <p>Let Students Let</p>
+              <span>Angular</span>
+            </div>
+          </div>
+          <div class="back">
+            <div class="inner">
+              <p>An application designed for students in Ireland to advertize and find suitable housing</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</body>
 
-  </template>
-
-</dom-module>
-
-<script>
-  Polymer({
-    is: "custom-tag",
-  });
-
-  let container = document.querySelector('.logo-container');
-  let img = container.querySelector('.hover-img');
-
-  document.body.onmousemove = (e) => {
-    let x = e.pageX;
-    let y = e.pageY;
-    img.style.top = y + 'px';
-    img.style.left = x + 'px';
-  }
-
-  container.querySelectorAll('.text').forEach(text => {
-    text.onmousemove = () => {
-      img.src = text.getAttribute('data-src');
-    }
-  });
-</script>
+</html>

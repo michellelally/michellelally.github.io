@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 
-
-
-
 @keyframes transitionIn {
   from {
     opacity: 0;
@@ -65,7 +62,7 @@ menu-wrap{
 .page-content {
   animation: transitionIn 0.75s;
   max-width: 90ch;
-  padding: 4rem;
+  padding: 5rem;
   padding-top: 1rem;
   margin: 8rem auto;
   margin-top: 5rem;
@@ -80,20 +77,16 @@ menu-wrap{
   }
 
   h1 {
-    // font-size: var(--headline-font-size);
-
+    font-size: var(--headline-font-size);
     font-weight: 700;
     line-height: 1.2;
   }
 
   h2 {
     margin-top: 6rem;
-    // font-size: var(--section-heading-font-size);
     font-weight: 700;
     line-height: 1.2;
     font-family: 'Poiret One', cursive;
-
-
   }
 
   em {
@@ -101,7 +94,7 @@ menu-wrap{
   }
 
   p {
-    // font-size: var(--paragraph-font-size);
+    font-size: var(--paragraph-font-size);
     line-height: 1.75;
     letter-spacing: 0.0125rem;
   }
@@ -158,10 +151,10 @@ menu-wrap{
   height: 100%;
   overflow: hidden;
   font-weight: 700;
-  font-family: "Karla", sans-serif;
   text-transform: uppercase;
   z-index: 1;
   margin-top: 8.5vh;
+
 }
 
 .marquee {
@@ -224,21 +217,6 @@ menu-wrap{
   margin-top: 0;
 }
 
-
-@-moz-document url-prefix() {
-  .h2 {font-size:15vh;}
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
-
-// *{
-//   margin:0; padding:0;
-//   box-sizing: border-box;
-//   outline: none; border:none;
-//   transition: all .2s linear;
-// }
-
 html::-webkit-scrollbar{
   width:20px;
 }
@@ -258,17 +236,13 @@ html::-webkit-scrollbar-thumb{
   transition: all .2s linear;
   padding:2%;
   text-align: center;
-  // position: relative;
-  // display: flex;
-  // flex-flow: column;
   align-items: center;
 }
 
 .logo-container .text{
   font-family: 'Poiret One', cursive;
-
   color:#fff3;
-  font-size: 2vw;
+  font-size: 2vh;
   text-transform: capitalize;
   padding:2%;
   cursor: pointer;
