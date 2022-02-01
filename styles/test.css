@@ -190,3 +190,7 @@ h1{
     margin: 0 0 2rem 0;
   }
 }
+
+a {
+  text-decoration: none;
+}

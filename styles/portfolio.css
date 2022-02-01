@@ -97,12 +97,8 @@ menu-wrap {
   font-size-adjust: 0.55;
 }
 
-.page-content * + * {
-  margin-top: 2.5rem;
-}
-
 .page-content a {
-  color: var(--color-chill);
+  color: #fff;
 }
 
 .page-content h1 {
@@ -123,7 +119,12 @@ menu-wrap {
 }
 
 .page-content p {
-  font-size: var(--paragraph-font-size);
+  font-family: 'Didact Gothic';
+}
+
+.page-content .welcome .tools {
+  font-family: 'Didact Gothic';
+  font-size: 22px;
   line-height: 1.75;
   letter-spacing: 0.0125rem;
 }

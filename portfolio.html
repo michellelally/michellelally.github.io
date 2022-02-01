@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,18 +6,14 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles/navbar.css">
   <link rel="stylesheet" href="styles/portfolio.css">
-  <link rel="stylesheet" href="styles/honeycomb-grid.css">
+  <link rel="stylesheet" href="styles/grid.css">
   <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
 
   <style>
     nav {
       padding: .5rem 1rem;
     }
-
-    p {
-      font-family: 'Didact Gothic';
-      font-size: 22px;
-    }
+    
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -93,113 +88,148 @@
       <h2>Tools & Technologies</h2>
 
       <p class="tools">
-        <div class="logo-container">
-          <h5 class="text" data-src="img/html.png">HTML</h5>
-          <h5 class="text" data-src="./img/js.png">JS</h5>
-          <h5 class="text" data-src="./img/css.png">CSS</h5>
-          <h5 class="text" data-src="./img/react.png">React</h5>
-          <h5 class="text" data-src="./img/angular.png">Angular</h5>
-          <h5 class="text" data-src="./img/ionic.png">Ionic</h5>
-          <h5 class="text" data-src="./img/tailwind.png">Tailwind</h5>
-          <h5 class="text" data-src="./img/bootstrap.png">Bootstrap</h5>
-          <h5 class="text" data-src="./img/java.png">Java</h5>
-          <h5 class="text" data-src="./img/csharp.png">C#</h5>
-          <h5 class="text" data-src="./img/python.png">Python</h5>
-          <h5 class="text" data-src="./img/ruby.png">Ruby</h5>
+      <div class="logo-container">
+        <p class="text" data-src="img/html.png">HTML</p>
+        <p class="text" data-src="./img/js.png">JS</p>
+        <p class="text" data-src="./img/css.png">CSS</p>
+        <p class="text" data-src="./img/react.png">React</p>
+        <p class="text" data-src="./img/angular.png">Angular</p>
+        <p class="text" data-src="./img/ionic.png">Ionic</p>
+        <p class="text" data-src="./img/tailwind.png">Tailwind</p>
+        <p class="text" data-src="./img/bootstrap.png">Bootstrap</p>
+        <p class="text" data-src="./img/java.png">Java</p>
+        <p class="text" data-src="./img/csharp.png">C#</p>
+        <p class="text" data-src="./img/python.png">Python</p>
+        <p class="text" data-src="./img/ruby.png">Ruby</p>
 
-          <img src="./img/html.png" class="hover-img" alt="">
-        </div>
+        <img src="./img/html.png" class="hover-img" alt="">
+      </div>
       </p>
     </section>
-<!-- 
-    <section class="page-content__section" data-bg-color="#333333">
+
+    <section  style="margin-top: 0;" class="page-content__section" data-bg-color="#333333">
+      <h2 class="projects">Projects</h2>
+
+
+      <div class="project-wrapper" style="margin-top: 0;">
+
+        <div class="cols">
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(img/activisthub.png)">
+                <div class="inner">
+                  <p>Activists Hub</p>
+                  <span>Laravel</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <a href="https://activisthub.org/">
+                    <p>As part of an ongoing volunteer group, I am part of a team redesigning this web application</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(img/harrysapp.png)">
+                <div class="inner">
+                  <p>Harry's Bar</p>
+                  <span>MERN Stack</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <a href="https://github.com/michellelally/cocktail-app">
+                    <p>An interactive cocktail menu for a local bar with a machine learning recommendation system</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(img/rubyproductions.png)">
+                <div class="inner">
+                  <p>Ruby Productions</p>
+                  <span>HTML CSS JS</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <a href="https://github.com/michellelally/ruby-productions">
+                    <p>A portfolio for a local videographer to display and advertise his work to potential future employers
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(img/pocketrota.png)">
+                <div class="inner">
+                  <p>Pocket Rota</p>
+                  <span>Ruby on Rails</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <a href="https://github.com/michellelally/pocket-rota">
+                    <p>A web application for restaraunt and bar managers to keep track of employees, covid restricitons &
+                      events</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(img/harrysweb.png)">
+                <div class="inner">
+                  <p>Harry's Bar</p>
+                  <span>React</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <a href="https://github.com/michellelally/harrys-cocktail-menu/">
+                    <p>Before the mobile version, I created a web app for the interactive menu to build my knowledge of the
+                      React library</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col" ontouchstart="this.classList.toggle('hover');">
+            <div class="container">
+              <div class="front" style="background-image: url(img/weblectric2.png)">
+                <div class="inner">
+                  <p>Weblectric</p>
+                  <span>HTML CSS JS</span>
+                </div>
+              </div>
+              <div class="back">
+                <div class="inner">
+                  <a href="https://github.com/michellelally/weblectric">
+                    <p>A webpage to advertise and buy tickets to an online virtual music festival as part of a team project
+                    </p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+        
+    <section class="page-content__section" data-bg-color="#444444">
       <h2>Experience</h2>
 
-      <p>
-        Office Administrator TLS
-        Galway, Ireland | May 2021 - Present
-      </p>
-
-      <p>
-        Line Operator, Medtronic
-        Galway, Ireland | August 2020 - Present
-      </p>
-
-      <p>
-        FINE DINING SERVER Quan Ju De
-        Vancouver, Canada | January 2019 - March 2020
-
-      </p>
-
-      <p>
-        BARTENDER/SERVER The Distillery Bar + Kitchen
-        Vancouver, Canada | May 2019 - March 2020
-      </p>
-
-      <p>
-        BARTENDER/SERVER The Kings Head
-        Vancouver, Canada | July 2019 - November 2019
-      </p>
-
-      <p>
-        BARTENDER/SERVER Black Frog Eatery
-        Vancouver, Canada | May 2018- August 2018
-
-      </p>
-
-      <p>
-        BARTENDER/SERVER Flannery’s Hotel
-        Renmore, Galway | December 2017 - May 2019
-      </p>
-
-      <p>
-        BARTENDER/SERVER The Skeff
-        Galway, Ireland | June 2017 - December 2017
-
-      </p>
-
-      <p>
-        STUDENT SOFTWARE/WEB DEVELOPER Ontia
-        Krakow, Poland | March – April 2016
-    </section> -->
-
-    <section class="page-content__section" data-bg-color="#444444">
-      <h2 id="projects">Projects</h2>
-
-      <ul class="honeycomb">
-        <!-- <li class="honeycomb-cell">
-            <img class="honeycomb-cell_img" src="img/work-1.jpg">
-            <div class="honeycomb-cell_title">Web Design</div>
-        </li>
-        <li class="honeycomb-cell">
-            <img class="honeycomb-cell_img" src="img/work-2.jpg">
-            <div class="honeycomb-cell_title">Graphic Design</div>
-        </li> -->
-        <li class="honeycomb-cell">
-            <img class="honeycomb-cell_img" src="img/Work3.jpg">
-            <div class="honeycomb-cell_title">Illustration</div>
-        </li>
-        <li class="honeycomb-cell">
-            <img class="honeycomb-cell_img" src="img/work4.jpg">
-            <div class="honeycomb-cell_title">Motion Graphics</div>
-        </li>
-        <li class="honeycomb-cell">
-            <img class="honeycomb-cell_img" src="img/work5.jpg">
-            <div class="honeycomb-cell_title">3D<small>Animation</small></div>
-        </li>
-        <li class="honeycomb-cell">
-            <img class="honeycomb-cell_img" src="img/work06.jpg">
-            <div class="honeycomb-cell_title">Cinematic<small>4D</small></div>
-        </li>
-        <li class="honeycomb-cell">
-            <img class="honeycomb-cell_img" src="img/work07.jpg">
-            <div class="honeycomb-cell_title">Share Design</div>
-        </li>
-        <li class="honeycomb-cell honeycomb_Hidden">
-        </li>
-    </ul>
-    
     </section>
+
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>

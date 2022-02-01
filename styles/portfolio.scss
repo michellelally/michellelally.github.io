@@ -68,12 +68,9 @@ menu-wrap{
   margin-top: 5rem;
   font-size-adjust:0.55;
 
-  * + * {
-    margin-top: 2.5rem;
-  }
 
   a {
-    color: var(--color-chill);
+    color: #fff;
   }
 
   h1 {
@@ -94,7 +91,14 @@ menu-wrap{
   }
 
   p {
-    font-size: var(--paragraph-font-size);
+    font-family: 'Didact Gothic';
+
+  }
+
+
+  .welcome .tools {
+    font-family: 'Didact Gothic';
+    font-size: 22px;
     line-height: 1.75;
     letter-spacing: 0.0125rem;
   }
