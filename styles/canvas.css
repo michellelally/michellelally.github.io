@@ -233,3 +233,9 @@ nav {
   }
 }
 }
+
+.home-link {
+  display: block;
+  height: 100px;
+  width: 100px;
+}
