@@ -1,12 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 @keyframes transitionIn {
   from {
     opacity: 0;
     transform: rotateY(-20deg);
-  } 
+  }
 
   to {
     opacity: 1;
@@ -18,7 +17,7 @@
   from {
     opacity: 0;
     transform: rotateY(-20deg);
-  } 
+  }
 
   to {
     opacity: 1;
@@ -40,8 +39,7 @@
 
 * {
   box-sizing: border-box;
-  transition: all .2s linear;
-
+  transition: all 0.2s linear;
 }
 
 body {
@@ -52,15 +50,14 @@ body {
   transition: background-color var(--duration) var(--ease);
 }
 
-nav { 
+nav {
   z-index: 2;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
-menu-wrap{ 
+menu-wrap {
   padding-top: 0;
 }
-
 
 .page-content {
   z-index: 1;
@@ -70,8 +67,7 @@ menu-wrap{
   padding-top: 1rem;
   margin: 8rem auto;
   margin-top: 5rem;
-  font-size-adjust:0.55;
-
+  font-size-adjust: 0.55;
 
   a {
     color: #fff;
@@ -87,7 +83,7 @@ menu-wrap{
     margin-top: 6rem;
     font-weight: 700;
     line-height: 1.2;
-    font-family: 'Poiret One', cursive;
+    font-family: "Poiret One", cursive;
   }
 
   em {
@@ -95,20 +91,16 @@ menu-wrap{
   }
 
   p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 
   }
 
-  .navbar {
+  
+}
 
-  }
 
-  .welcome .tools {
-    font-family: 'Didact Gothic';
-    font-size: 22px;
-    line-height: 1.75;
-    letter-spacing: 0.0125rem;
-  }
+.welcome, .tools {
+  font-size: 2vh;
 }
 
 .page-content__section {
@@ -166,7 +158,6 @@ menu-wrap{
   text-transform: uppercase;
   z-index: 1;
   margin-top: 100px;
-
 }
 
 .marquee {
@@ -174,7 +165,7 @@ menu-wrap{
   position: absolute;
   font-size: var(--marquee-font-size);
   line-height: 1;
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   white-space: nowrap;
   letter-spacing: 0.25rem;
   overflow: hidden;
@@ -183,8 +174,7 @@ menu-wrap{
   user-select: none;
   background-color: var(--color-background);
   box-shadow: var(--color-background) 0 2vmin 2vmin 1vmin;
-  transition: background-color var(--duration) var(--ease),
-    box-shadow var(--duration) var(--ease);
+  transition: background-color var(--duration) var(--ease), box-shadow var(--duration) var(--ease);
 
   &--top {
     top: -1px;
@@ -230,59 +220,60 @@ menu-wrap{
   margin-top: 0;
 }
 
-html::-webkit-scrollbar{
-  width:20px;
+html::-webkit-scrollbar {
+  width: 20px;
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
   background: #000;
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
   background: #fff;
 }
 
-.logo-container{
-  margin:0; padding:0;
+.logo-container {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  outline: none; border:none;
-  transition: all .2s linear;
-  padding:2%;
+  outline: none;
+  border: none;
+  transition: all 0.2s linear;
+  padding: 2%;
   text-align: center;
   align-items: center;
 }
 
-.logo-container .text{
-  font-family: 'Poiret One', cursive;
-  color:#fff3;
+.logo-container .text {
+  font-family: "Poiret One", cursive;
+  color: #fff3;
   font-size: 2vh;
   text-transform: capitalize;
-  padding:2%;
+  padding: 2%;
   cursor: pointer;
 }
 
-.logo-container .text:hover{
-  color:#fff;
+.logo-container .text:hover {
+  color: #fff;
   position: relative;
   z-index: 100;
-  text-shadow: 0 5px 10px rgba(0,0,0,.7);
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
 }
 
-.logo-container .text:hover ~ .hover-img{
+.logo-container .text:hover ~ .hover-img {
   transform: translate(-2%, -2%) scale(1);
   opacity: 1;
 }
 
-.hover-img{
-  transition: all .2s linear;
+.hover-img {
+  transition: all 0.2s linear;
   position: absolute;
   // top:0; left:0;
-  transform: translate(-2%, -2%) scale(.5);
+  transform: translate(-2%, -2%) scale(0.5);
   opacity: 0;
   pointer-events: none;
   z-index: 10;
 }
-
 
 .overlay {
   z-index: 100;
@@ -291,14 +282,14 @@ html::-webkit-scrollbar-thumb{
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
   transition: 0.5s;
 }
 
 .overlay-content {
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   position: relative;
   top: 25%;
   width: 100%;
@@ -315,7 +306,8 @@ html::-webkit-scrollbar-thumb{
   transition: 0.3s;
 }
 
-.overlay a:hover, .overlay a:focus {
+.overlay a:hover,
+.overlay a:focus {
   color: #f1f1f1;
 }
 
@@ -327,10 +319,12 @@ html::-webkit-scrollbar-thumb{
 }
 
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }

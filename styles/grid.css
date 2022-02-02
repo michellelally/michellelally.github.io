@@ -25,7 +25,7 @@
   }
   
   .col{
-    width: calc(33.3% - 2rem);
+    width: calc(33.3% - 1rem);
     margin: .5rem;
     cursor: pointer;
   }
