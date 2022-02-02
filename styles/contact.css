@@ -65,6 +65,8 @@ section .profile .profile-img{
     font-size: 16px;
     color: #fff;
     pointer-events: none;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 section .popup-outer{
@@ -175,3 +177,4 @@ section .popup-box .button{
 .send:hover{
     background: #275df1;
 }
+

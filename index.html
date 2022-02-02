@@ -15,8 +15,9 @@
     <header>
         <nav>
             <div class="menu-wrap">
-                <img class="logo" src="./img/logo.png" alt="logo">
-
+                <a href="./index.html">
+                    <img class="logo" src="./img/logo.png" alt="logo">
+                </a>
                 <input type="checkbox" class="toggler" onclick="openNav()">
                 <div class="hamburger">
                     <div></div>
@@ -25,11 +26,11 @@
         </nav>
         <div id="menu" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-                <a href="./index.html">Home</a>
-                <a href="./portfolio.html#about">About</a>
-                <a href="./portfolio.html#projects">Projects</a>
-                <a href="./contact.html">Contact</a>
+            <div class="overlay-content" onclick="closeNav()">
+                <a href="./index.html" onclick="closeNav()">Home</a>
+                <a href="./portfolio.html#about" onclick="closeNav()">About</a>
+                <a href="./portfolio.html#projects" onclick="closeNav()">Projects</a>
+                <a href="./portfolio.html#contact">Contact</a>
             </div>
         </div>
     </header>

@@ -111,6 +111,11 @@ menu-wrap {
   }
 }
 
+.anchor {
+  position: absolute;
+  transform: translateY(-18vh);
+}
+
 .page-content__section.active {
   opacity: 1;
 
@@ -210,7 +215,7 @@ menu-wrap {
   }
 }
 
-#about {
+#profile-pic {
   max-width: 50%;
   float: left;
   padding-right: 2%;
@@ -233,23 +238,34 @@ html::-webkit-scrollbar-thumb {
 }
 
 .logo-container {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
+
   transition: all 0.2s linear;
-  padding: 2%;
+  align-content: center;
   text-align: center;
+  padding: 1%;
   align-items: center;
 }
 
+.logo-container {
+  margin-bottom: 200px;
+}
+
+.left {
+  float: left;
+text-align: center;
+}
+
+.right {
+  float: right;
+  text-align: center;
+}
+
 .logo-container .text {
-  font-family: "Poiret One", cursive;
-  color: #fff3;
-  font-size: 2vh;
+  font-family: "Poppins", sans-serif;
+  color: #666;
+  font-size: 1.75vh;
   text-transform: capitalize;
-  padding: 2%;
+  padding: 1.5%;
   cursor: pointer;
 }
 

@@ -21,11 +21,13 @@
 </head>
 
 <body>
+
   <header>
     <nav class="navbar">
       <div class="menu-wrap">
-        <img class="logo" src="./img/logo.png" alt="logo">
-
+        <a href="./index.html">
+          <img class="logo" src="./img/logo.png" alt="logo">
+        </a>
         <input type="checkbox" class="toggler" onclick="openNav()">
         <div class="hamburger">
           <div></div>
@@ -38,7 +40,7 @@
         <a href="./index.html">Home</a>
         <a href="./portfolio.html#about">About</a>
         <a href="./portfolio.html#projects">Projects</a>
-        <a href="./contact.html">Contact</a>
+        <a href="./portfolio.html#contact">Contact</a>
       </div>
     </div>
   </header>
@@ -59,15 +61,13 @@
   </div>
 
   <main class="page-content">
-    <!-- <h1>You'll <u>never</u> believe how chill it is!</h1>
-        <p>The chill zone is where all the things are copacetic. Think about all the unchill things in your life. Think about them, just for a moment. And now? Just forget about 'em. Why? Because, my friend: you've just entered the <em>Chill Zone</em>. The following passages of text are pulled from this <a href="https://www.wikihow.com/Be-Chill">wikiHow article</a>.</p>
-       -->
+
+    <span class="anchor" id="about"></span>
+
     <section class="page-content__section" data-bg-color="#111111">
       <h2>Welcome to my portfolio</h2>
-
       <div class="photo-container">
-        <img src="img/me.jpg" id="about" alt="me">
-
+        <img src="img/me.jpg" id="profile-pic" alt="me">
         <p class="welcome">
           I am a Software Development Graduate who recently completed a course in Computing with Web Development who has
           gained a
@@ -83,38 +83,38 @@
         </p>
       </div>
       </div>
-
     </section>
 
     <section class="page-content__section" data-bg-color="#222222">
       <h2>Tools & Technologies</h2>
-
       <p class="tools">
       <div class="logo-container">
-        <p class="text" data-src="img/html.png">HTML</p>
-        <p class="text" data-src="./img/js.png">JS</p>
-        <p class="text" data-src="./img/css.png">CSS</p>
-        <p class="text" data-src="./img/react.png">React</p>
-        <p class="text" data-src="./img/angular.png">Angular</p>
-        <p class="text" data-src="./img/ionic.png">Ionic</p>
-        <p class="text" data-src="./img/tailwind.png">Tailwind</p>
-        <p class="text" data-src="./img/bootstrap.png">Bootstrap</p>
-        <p class="text" data-src="./img/java.png">Java</p>
-        <p class="text" data-src="./img/csharp.png">C#</p>
-        <p class="text" data-src="./img/python.png">Python</p>
-        <p class="text" data-src="./img/ruby.png">Ruby</p>
-
+        <p class="text left" data-src="img/html.png">HTML</p>
+        <p class="text left" data-src="./img/js.png">JS</p>
+        <p class="text left" data-src="./img/css.png">CSS</p>
+        <p class="text left" data-src="./img/react.png">React</p>
+        <p class="text left" data-src="./img/angular.png">Angular</p>
+        <p class="text left" data-src="./img/ionic.png">Ionic</p>
+        <p class="text right" data-src="./img/java.png">Java</p>
+        <p class="text right" data-src="./img/csharp.png">C#</p>
+        <p class="text right" data-src="./img/python.png">Python</p>
+        <p class="text right" data-src="./img/ruby.png">Ruby</p>
+        <p class="text right" data-src="./img/firebase.png">Firebase</p>
+        <p class="text right" data-src="./img/mongodb.png">MongoDB</p>
+        <p class="text right" data-src="./img/mysql.png">MySQL</p>
+        <p class="text left" data-src="./img/tailwind.png">Tailwind</p>
+        <p class="text left" data-src="./img/bootstrap.png">Bootstrap</p>
+        <p class="text left" data-src="./img/tensorflow.png">TensorFlow</p>
         <img src="./img/html.png" class="hover-img" alt="">
       </div>
       </p>
     </section>
 
-    <section style="margin-top: 0;" class="page-content__section" data-bg-color="#333333">
+    <span class="anchor" id="projects"></span>
+
+    <section class="page-content__section" data-bg-color="#333333">
       <h2 class="projects">Projects</h2>
-
-
       <div class="project-wrapper" style="margin-top: 0;">
-
         <div class="cols">
           <div class="col" ontouchstart="this.classList.toggle('hover');">
             <div class="container">
@@ -231,6 +231,8 @@
 
     </section>
 
+    <span class="anchor" id="contact"></span>
+
     <section class="profile page-content__section" data-bg-color="#444444">
       <h2>Contact</h2>
       <div class="profile">
@@ -261,7 +263,6 @@
       </div>
       </div>
     </section>
-
   </main>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
