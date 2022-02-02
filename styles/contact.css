@@ -1,20 +1,5 @@
-/* Google Font Import - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-} */
 
-/* section{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 .profile .popup-outer {
     font-family: 'Poppins', sans-serif;
@@ -22,7 +7,6 @@
 
 section .profile{
     font-family: 'Poppins', sans-serif;
-
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -50,7 +34,7 @@ section .profile .profile-img{
 .profile .profession{
     font-size: 18px;
     font-weight: 500;
-    color: #333;
+    color: #4070f4;
 }
 .profile .profession{
     font-weight: 400;
@@ -84,18 +68,15 @@ section .profile .profile-img{
 }
 
 section .popup-outer{
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.4);
     opacity: 0;
     pointer-events: none;
-    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
     transform: scale(1.2);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease;
 }
 section.show .popup-outer{
     opacity: 1;
@@ -145,8 +126,9 @@ section .popup-box img{
     font-size: 12px;
     font-weight: 500;
 }
-section .popup-box textarea{
-    min-height: 140px;
+section .popup-box textarea {
+    font-family: 'Poppins', sans-serif;
+
     width: 100%;
     margin-top: 20px;
     outline: none;
@@ -158,29 +140,38 @@ section .popup-box textarea{
     font-weight: 400;
     background: #f3f3f3;
 }
+
+#message {
+    min-height: 140px;
+}
+
+#email, #name {
+    min-height: 50px;
+}
 section .popup-box .button{
     display: flex;
     justify-content: flex-end;
     margin-top: 15px;
 }
-.popup-box .button button{
+.popup-box button, input{
+    float: right;
     outline: none;
     border: none;
     padding: 6px 12px;
+    margin: 2px;
     border-radius: 6px;
     background: #6f93f6;
-    margin-left: 8px;
     color: #fff;
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.button button.cancel{
+.cancel{
     background: #f082ac;
 }
-.button button.cancel:hover{
+.cancel:hover{
     background: #ec5f95;
 }
-.button button.send:hover{
+.send:hover{
     background: #275df1;
 }
