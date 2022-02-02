@@ -70,3 +70,62 @@ logoContainer.querySelectorAll('.text').forEach(text => {
     logoImg.src = text.getAttribute('data-src');
   }
 });
+
+// function contactBtn() {
+//   console.log("contact")
+//   section.classList.add("show");
+
+// }
+
+// function closeBtn() {
+//   section.classList.remove("show");
+//   textArea.value = "";
+// }
+
+const section = document.querySelector("section.profile"),
+  contactBtn = section.querySelector("#contactBtn"),
+  closeBtn = section.querySelector("#close"),
+  textArea = section.querySelector("textarea");
+
+contactBtn.addEventListener("click", () => {
+  section.classList.add("show");
+});
+
+
+function close() {
+  section.classList.remove("show");
+  textArea.value = "";
+}
+
+console.log(closeBtn)
+
+closeBtn.addEventListener("click", () => {
+  console.log("close")
+  section.classList.remove("show");
+  textArea.value = "";
+});
+
+function send() {
+  console.log("send")
+}
+
+function sendEmail() {
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let message = document.getElementById("message").value;
+
+  Email.send({
+    SecureToken: "63140acd-4d8e-4da6-b546-81ee0c599429",
+    To: 'shelley.lally@gmail.com',
+    From: 'shelley.lally@gmail.com',
+    Subject: "Sending an email from your portfolio!",
+    Body: body,
+  })
+    .then(
+      alert("Message sent successfully!")
+    );
+
+    name.value = "";
+    email.value = "";
+    message.value = "";
+}

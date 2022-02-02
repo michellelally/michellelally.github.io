@@ -1,19 +1,29 @@
-const section = document.querySelector("section"),
-    hireBtn = document.querySelector(".profile .button"),
-cancelBtn = document.querySelectorAll("#close");
+// const section = document.getElementsByClassName("section"),
+// contactBtn = document.getElementById("contact"),
+// closeBtn = document.getElementById("close"),
+// textArea = document.getElementById("message");
+
+// console.log(section)
+
+// console.log(contactBtn)
+
+// contactBtn.addEventListener("click" , () =>{
+//   section.add("show");
+// });
+
+// closeBtn.addEventListener("click" , ()=>{
+//       section.classList.remove("show");
+//       textArea.value = "";
+//   });
 
 
-window.addEventListener('load', (event) => {
-    section.classList.add("active");
+// function contactBtn() {
+//   console.log("contact")
+//   section.classList.add("show");
 
-});
+// }
 
-// hireBtn.addEventListener("load", () => {
-//     section.classList.add("active");
-// })
-cancelBtn.forEach(cBtn => {
-    cBtn.addEventListener("click", () => {
-        section.classList.remove("active");
-    })
-});
-console.log(cancelBtn);
+// function closeBtn() {
+//   section.classList.remove("show");
+//   textArea.value = "";
+// }
