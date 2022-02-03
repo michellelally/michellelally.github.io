@@ -4,7 +4,7 @@
   from {
     opacity: 0;
     transform: rotateX(-35deg);
-  } 
+  }
 
   to {
     opacity: 1;
@@ -16,7 +16,7 @@
   from {
     opacity: 0;
     transform: rotateY(-35deg);
-  } 
+  }
 
   to {
     opacity: 1;
@@ -24,25 +24,33 @@
   }
 }
 
-
-@keyframes t{
-  90%,100% {width:100%}
+@keyframes t {
+  90%,
+  100% {
+    width: 100%;
+  }
 }
 
-@keyframes c{
-  0%,100%{box-shadow:5px 0 0 #0000}
-  50%    {box-shadow:5px 0 0 white}
+@keyframes c {
+  0%,
+  100% {
+    box-shadow: 5px 0 0 #0000;
+  }
+  50% {
+    box-shadow: 5px 0 0 white;
+  }
 }
 
-
-@keyframes m{
-  100% {transform:translateY(-400%)}
+@keyframes m {
+  100% {
+    transform: translateY(-400%);
+  }
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
-
 }
 
 .full-height {
@@ -56,49 +64,26 @@ body {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  font-family: 'Poiret One', cursive;
+  font-family: "Poiret One", cursive;
   background: rgba(0, 0, 0, 0.74);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-image: linear-gradient(to right top, hsla(0, 5%, 15%, 0.5), hsla(0, 5%, 5%, 1));
   background-image: -moz-linear-gradient(to right top, hsla(0, 5%, 15%, 0.5), hsla(0, 5%, 5%, 1));
 }
-/* 
-nav {
-  display: grid;
-  grid-template-columns: 10% 1fr 1fr 10%;
-  min-height: 6vh;
-  color: white;
-  align-self: center;
-  background-color:  hsla(76, 96%, 56%, 0.562);
-}
-
-.logo{
-  height: 80%;
-  grid-column: 2/3;
-  justify-self: start;
-  padding: 5px;
-}
-
-.burger {
-  grid-column: 3/3;
-  justify-self: end;
-   height: 80%;
-   padding: 5px;
-} */
 
 #canv {
-  margin-top: 8vh;
+  width:  100%;
+  height: 100%;
 }
 
-#name{
-  animation: transitionIn 5.0s;
-  text-align:center;
-  width:100%;
-  color:#f9f5f9;
-  font-size:6em;
-  text-shadow:1px 1px hsla(0,0%,5%,1),
-          -1px -1px hsla(0,0%,5%,1);
+#name {
+  animation: transitionIn 5s;
+  text-align: center;
+  width: 100%;
+  color: #f9f5f9;
+  font-size: 6em;
+  text-shadow: 1px 1px hsla(0, 0%, 5%, 1), -1px -1px hsla(0, 0%, 5%, 1);
   letter-spacing: 6px;
   text-align: center;
   position: relative;
@@ -106,38 +91,37 @@ nav {
   margin-bottom: 5vh;
 }
 
-#btn-container{
+#btn-container {
   text-align: center;
-  position: relative;
-
+ 
 }
 
 #btn {
-  
-  font-family: 'Poiret One', cursive;
+  opacity: 1;
+  font-family: "Poiret One", cursive;
   animation: transitionInBtn 8s;
-  background-color: #8c34e4;
+  background-color: #b15e27;
   color: #ffffff;
   letter-spacing: 5px;
-  font-size:2em;
+  font-size: 2em;
   padding: 1.25%;
   border-radius: 10px;
   border: none;
 }
 
 #btn:hover {
-  background-color: #a058e8;
+  background-color: #dd7732;
   cursor: pointer;
 }
 
 #btn:active {
-  background-color: #a058e8;
+  background-color: #dd7732;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
-
 .overlay {
+  z-index: 2;
   height: 100%;
   width: 0;
   position: fixed;
@@ -177,65 +161,16 @@ nav {
   right: 45px;
   font-size: 60px;
 }
-
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
-  font-size: 40px;
-  top: 15px;
-  right: 35px;
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
 }
 
-.type-container {
-  margin-bottom: 5vh;
-} 
 
-.type {
 
-  font-size: 2em;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: transitionIn 4.0s, typewriter 2s steps(13) infinite alternate,
-    blink 800ms steps(13) infinite normal;
-    /* animation: transitionIn 6.0s; */
-  color: white;
-  margin:auto;
-}
-@keyframes typewriter {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 40%;
-  }
-}
-@keyframes blink {
-  from {
-    border-color: white;
-  }
-  to {
-    border-color: transparent;
-  }
-}
-
-@-moz-document url-prefix() {
-  #canv {
-    margin-top: 10vh;
-  }
-
-@keyframes typewriter {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 42%;
-  }
-}
-}
-
-.home-link {
-  display: block;
-  height: 100px;
-  width: 100px;
-}

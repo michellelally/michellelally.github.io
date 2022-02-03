@@ -28,7 +28,7 @@
 :root {
   --color-background: #151818;
   --color-text: whitesmoke;
-  --color-chill: #ecf232;
+  --color-chill: #dd7732;
   --marquee-font-size: min(max(12px, 2vw), 22px);
   --headline-font-size: min(max(40px, 6vw), 70px);
   --paragraph-font-size: min(max(16px, 4vw), 22px);
@@ -65,7 +65,8 @@ menu-wrap {
   max-width: 90ch;
   padding: 5rem;
   padding-top: 1rem;
-  margin: 8rem auto;
+  margin: 7rem auto;
+  margin-bottom: 1rem;
   margin-top: 5rem;
   font-size-adjust: 0.55;
 
@@ -80,6 +81,8 @@ menu-wrap {
   }
 
   h2 {
+
+    font-size: 5vh;
     margin-top: 6rem;
     font-weight: 700;
     line-height: 1.2;
@@ -98,8 +101,7 @@ menu-wrap {
   
 }
 
-
-.welcome, .tools {
+.welcome, .tools .profile, .popup-outer {
   font-size: 2vh;
 }
 
@@ -292,7 +294,7 @@ text-align: center;
 }
 
 .overlay {
-  z-index: 100;
+  z-index: 2;
   height: 100%;
   width: 0;
   position: fixed;
@@ -310,13 +312,12 @@ text-align: center;
   top: 25%;
   width: 100%;
   text-align: center;
-  margin-top: 30px;
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 2%;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 3vh;
   color: #818181;
   display: block;
   transition: 0.3s;

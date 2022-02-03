@@ -1,129 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="styles/grid.css">
-
-  <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title of the document</title>
+  <link rel="stylesheet" href="styles/typing.css">
 </head>
 
 <body>
-
-  <div class="project-wrapper">
-    <h1>Projects</h1>
-    <div class="cols">
-      <div class="col" ontouchstart="this.classList.toggle('hover');">
-        <div class="container">
-          <div class="front" style="background-image: url(img/activisthub.png)">
-            <div class="inner">
-              <h6>Activists Hub</h6>
-              <span>Laravel</span>
-            </div>
-          </div>
-          <div class="back">
-            <div class="inner">
-              <a href="https://activisthub.org/">
-                <h6>As part of an ongoing volunteer group, I am part of a team redesigning this web application</h6>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col" ontouchstart="this.classList.toggle('hover');">
-        <div class="container">
-          <div class="front" style="background-image: url(img/harrysapp.png)">
-            <div class="inner">
-              <h6>Harry's Bar</h6>
-              <span>MERN Stack</span>
-            </div>
-          </div>
-          <div class="back">
-            <div class="inner">
-              <a href="https://github.com/michellelally/cocktail-app">
-                <h6>An interactive cocktail menu for a local bar with a machine learning recommendation system</h6>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col" ontouchstart="this.classList.toggle('hover');">
-        <div class="container">
-          <div class="front" style="background-image: url(img/rubyproductions.png)">
-            <div class="inner">
-              <h6>Ruby Productions</h6>
-              <span>HTML CSS JS</span>
-            </div>
-          </div>
-          <div class="back">
-            <div class="inner">
-              <a href="https://github.com/michellelally/ruby-productions">
-                <h6>A portfolio for a local videographer to display and advertise his work to potential future employers
-                </h6>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col" ontouchstart="this.classList.toggle('hover');">
-        <div class="container">
-          <div class="front" style="background-image: url(img/pocketrota.png)">
-            <div class="inner">
-              <h6>Pocket Rota</h6>
-              <span>Ruby on Rails</span>
-            </div>
-          </div>
-          <div class="back">
-            <div class="inner">
-              <a href="https://github.com/michellelally/pocket-rota">
-                <h6>A web application for restaraunt and bar managers to keep track of employees, covid restricitons &
-                  events</h6>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col" ontouchstart="this.classList.toggle('hover');">
-        <div class="container">
-          <div class="front" style="background-image: url(img/harrysweb.png)">
-            <div class="inner">
-              <h6>Harry's Bar</h6>
-              <span>React</span>
-            </div>
-          </div>
-          <div class="back">
-            <div class="inner">
-              <a href="https://github.com/michellelally/harrys-cocktail-menu/">
-                <h6>Before the mobile version, I created a web app for the interactive menu to build my knowledge of the
-                  React library</h6>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col" ontouchstart="this.classList.toggle('hover');">
-        <div class="container">
-          <div class="front" style="background-image: url(img/weblectric2.png)">
-            <div class="inner">
-              <h6>Weblectric</h6>
-              <span>HTML CSS JS</span>
-            </div>
-          </div>
-          <div class="back">
-            <div class="inner">
-              <a href="https://github.com/michellelally/weblectric">
-                <h6>A webpage to advertise and buy tickets to an online virtual music festival as part of a team project
-                </h6>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
+  <div class="container">
+    <p>I am a <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
   </div>
+  <script src="js/typing.js"></script>
+
 </body>
 
 </html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      body {
+        background-color: #71718c;
+        color: #ffffff;
+        font-size: 100px;
+      }
+      h1 {
+        font-size: 30px;
+      }
+      .text-1 {
+        animation: text1;
+      }
+      .text-2 {
+        animation: text2;
+      }
+      .text-3 {
+        animation: text3;
+      }
+      .text-1,
+      .text-2,
+      .text-3 {
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        animation-duration: 10s;
+        animation-timing-function: steps(15, end);
+        animation-iteration-count: infinite;
+      }
+      .text-1::after,
+      .text-2::after,
+      .text-3::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        animation: caret infinite;
+        animation-duration: 1s;
+        animation-timing-function: steps(1, end);
+      }
+      @keyframes text3 {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        10%,
+        40% {
+          width: 7em;
+        }
+      }
+      @keyframes text2 {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        60%,
+        90% {
+          width: 7em;
+        }
+      }
+      @keyframes text1 {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        10%,
+        40% {
+          width: 7em;
+        }
+      }
+      @keyframes caret {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span class="text-1">Web Developer</span>
+      <span class="text-2">Web Designer</span>
+      <span class="text-2">App Developer</span>
+    </h1>
+  </body>
+</html> -->

@@ -1,24 +1,53 @@
-.type {
-  font-size: 20px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 2s steps(13) infinite alternate,
-    blink 800ms steps(13) infinite normal;
-  border-right: 5px solid black;
-}
-@keyframes typewriter {
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat');
+ */
+
+
+@keyframes transitionIn {
   from {
-    width: 0%;
+    opacity: 0;
+    transform: rotateX(-35deg);
   }
+
   to {
-    width: 20%;
+    opacity: 1;
+    transform: rotateX(0);
   }
+}
+
+.container {
+  z-index: 50;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  animation: transitionIn 5s;
+  color: #eee;
+  font-size: 3rem;
+  padding: 0.5rem;
+  /* font-weight: bold; */
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
 }
 @keyframes blink {
-  from {
-    border-color: black;
-  }
-  to {
-    border-color: transparent;
-  }
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
 }

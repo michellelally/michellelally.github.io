@@ -32,9 +32,9 @@ section .profile .profile-img{
 }
 .profile .name,
 .profile .profession{
-    font-size: 18px;
+    font-size: 3vh;
     font-weight: 500;
-    color: #4070f4;
+    color: #fff;
 }
 .profile .profession{
     font-weight: 400;
@@ -55,7 +55,7 @@ section .profile .profile-img{
 }
 .profile .button i{
     color: #fff;
-    font-size: 18px;
+    font-size: 3vh;
     margin-right: 5px;
 }
 .profile .button button{
@@ -90,7 +90,7 @@ section .popup-box{
     padding: 30px;
     max-width: 380px;
     width: 100%;
-    background: #fff;
+    background: rgba(64, 112, 244, 0.8);
     border-radius: 12px;
 }
 .popup-box .close{
