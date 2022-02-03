@@ -1,4 +1,3 @@
-
 nav {
   margin: 0;
   padding: 0;
@@ -8,10 +7,11 @@ nav {
   align-items: center;
   padding: 1rem 1.5rem;
   background-color:  #73941A;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */ 
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 100px;
+  z-index: 1;
 }
 
 a {

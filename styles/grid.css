@@ -171,7 +171,7 @@
   
   @media screen and (max-width: 64rem){
     .col{
-      width: calc(33.333333% - 2rem);
+      width: calc(33.333333% - 1rem);
     }
   }
   
