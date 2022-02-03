@@ -80,7 +80,6 @@ body {
 }
 
 nav {
-  z-index: 2;
   padding: 0.5rem 1rem;
 }
 
@@ -376,6 +375,53 @@ html::-webkit-scrollbar-thumb {
   z-index: 10;
 }
 
+<<<<<<< HEAD
+=======
+.overlay {
+  z-index: 2;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  font-family: "Poiret One", cursive;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.overlay a {
+  padding: 2%;
+  text-decoration: none;
+  font-size: 3vh;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+>>>>>>> 51564c19fa7973d3bba59ee7f007f3e3fa636a2e
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;
