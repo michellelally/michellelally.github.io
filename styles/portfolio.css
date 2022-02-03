@@ -80,6 +80,7 @@ body {
 }
 
 nav {
+  z-index: 2;
   padding: 0.5rem 1rem;
 }
 
@@ -126,7 +127,9 @@ menu-wrap {
   font-family: "Poppins", sans-serif;
 }
 
-.welcome, .tools .profile, .popup-outer {
+.welcome,
+.tools .profile,
+.popup-outer {
   font-size: 2vh;
 }
 
@@ -142,8 +145,8 @@ menu-wrap {
 
 .anchor {
   position: absolute;
-  -webkit-transform: translateY(-18vh);
-          transform: translateY(-18vh);
+  -webkit-transform: translateY(-15vh);
+          transform: translateY(-15vh);
 }
 
 .page-content__section.active {
@@ -317,37 +320,23 @@ html::-webkit-scrollbar-thumb {
 }
 
 .logo-container {
+  text-align: center;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
   padding: 1%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logo-container {
-  margin-bottom: 200px;
-}
-
-.left {
-  float: left;
-  text-align: center;
-}
-
-.right {
-  float: right;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .logo-container .text {
+  margin: auto;
   font-family: "Poppins", sans-serif;
   color: #666;
-  font-size: 1.75vh;
-  text-transform: capitalize;
-  padding: 1.5%;
+  font-size: 2vh;
+  padding: 1%;
   cursor: pointer;
 }
 
@@ -375,8 +364,6 @@ html::-webkit-scrollbar-thumb {
   z-index: 10;
 }
 
-<<<<<<< HEAD
-=======
 .overlay {
   z-index: 2;
   height: 100%;
@@ -421,7 +408,6 @@ html::-webkit-scrollbar-thumb {
   font-size: 60px;
 }
 
->>>>>>> 51564c19fa7973d3bba59ee7f007f3e3fa636a2e
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px;

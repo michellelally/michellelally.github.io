@@ -81,7 +81,6 @@ menu-wrap {
   }
 
   h2 {
-
     font-size: 5vh;
     margin-top: 6rem;
     font-weight: 700;
@@ -95,13 +94,12 @@ menu-wrap {
 
   p {
     font-family: "Poppins", sans-serif;
-
   }
-
-  
 }
 
-.welcome, .tools .profile, .popup-outer {
+.welcome,
+.tools .profile,
+.popup-outer {
   font-size: 2vh;
 }
 
@@ -115,7 +113,7 @@ menu-wrap {
 
 .anchor {
   position: absolute;
-  transform: translateY(-18vh);
+  transform: translateY(-15vh);
 }
 
 .page-content__section.active {
@@ -240,36 +238,50 @@ html::-webkit-scrollbar-thumb {
 }
 
 .logo-container {
-
+  text-align: center;
   transition: all 0.2s linear;
-  align-content: center;
-  text-align: center;
   padding: 1%;
-  align-items: center;
-}
-
-.logo-container {
-  margin-bottom: 200px;
-}
-
-.left {
-  float: left;
-text-align: center;
-}
-
-.right {
-  float: right;
-  text-align: center;
+  // margin-bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .logo-container .text {
+  margin: auto;
+
   font-family: "Poppins", sans-serif;
   color: #666;
-  font-size: 1.75vh;
-  text-transform: capitalize;
-  padding: 1.5%;
+  font-size: 2vh;
+  // text-transform: capitalize;
+  padding: 1%;
   cursor: pointer;
 }
+
+// .logo-container {
+//   transition: all 0.2s linear;
+//   width: 80%;
+//   margin-bottom: 200px;
+// }
+
+// .left {
+//   float: left;
+// text-align: left;
+// }
+
+// .right {
+//   float: right;
+//   text-align: right;
+
+// }
+
+// .logo-container .text {
+//   font-family: "Poppins", sans-serif;
+//   color: #666;
+//   font-size: 1.75vh;
+//   text-transform: capitalize;
+//   padding: 1.75%;
+//   cursor: pointer;
+// }
 
 .logo-container .text:hover {
   color: #fff;
@@ -293,14 +305,8 @@ text-align: center;
   z-index: 10;
 }
 
-<<<<<<< HEAD
-=======
 .overlay {
-<<<<<<< HEAD
   z-index: 2;
-=======
-  z-index: 1;
->>>>>>> b48be69c8c8f102ddf701f15aaf13634208bd03b
   height: 100%;
   width: 0;
   position: fixed;
@@ -340,7 +346,6 @@ text-align: center;
   right: 45px;
   font-size: 60px;
 }
->>>>>>> 51564c19fa7973d3bba59ee7f007f3e3fa636a2e
 
 @media screen and (max-height: 450px) {
   .overlay a {
