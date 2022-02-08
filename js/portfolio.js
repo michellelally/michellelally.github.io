@@ -119,7 +119,7 @@ function sendEmail() {
     To: 'shelley.lally@gmail.com',
     From: 'shelley.lally@gmail.com',
     Subject: "Sending an email from your portfolio!",
-    Body: body,
+    Body: message,
   })
     .then(
       alert("Message sent successfully!")
